@@ -39,3 +39,8 @@ class TestStringCalculator:
         """Test support for different delimiters."""
         result = self.calculator.add("//;\n3;4")
         assert result == 7
+
+    def test_negative_number_throws_exception(self):
+        """Test that negative numbers throw an exception."""
+        with pytest.raises(ValueError, match="negative numbers not allowed -1"):
+            self.calculator.add("-1")
