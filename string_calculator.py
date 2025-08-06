@@ -4,4 +4,4 @@ class StringCalculator:
         if not numbers:
             return 0
 
-        pass
+        return int(numbers)
