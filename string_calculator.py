@@ -5,6 +5,12 @@ class StringCalculator:
             return 0
 
         number_list = self._parse_numbers(numbers)
+
+        negatives = [num for num in number_list if num < 0]
+        if negatives:
+            negative_str = ','.join(map(str, negatives))
+            raise ValueError(f"negative numbers not allowed {negative_str}")
+
         return sum(number_list)
 
     def _parse_numbers(self, numbers: str):
