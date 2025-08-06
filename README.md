@@ -1,6 +1,6 @@
 # String Calculator TDD
 
-This is a TDD (Test-Driven Development) implementation of the String Calculator
+This is a TDD (Test-Driven Development) implementation of the String Calculator.
 
 ## Problem Statement
 Create a simple String calculator with a method signature: `int add(string numbers)`
@@ -20,9 +20,9 @@ This project follows strict Test-Driven Development (TDD) principles. Each commi
 
 ### Commit Strategy
 
-🔴 RED: Write failing test first (shows test-first approach)
-🟢 GREEN: Write minimal code to make test pass
-🔵 BLUE: Refactor to improve code structure while keeping tests green
+- 🔴 RED: Write failing test first (shows test-first approach)
+- 🟢 GREEN: Write minimal code to make test pass
+- 🔵 BLUE: Refactor to improve code structure while keeping tests green
 
 ## How to Run
 
