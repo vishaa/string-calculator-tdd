@@ -29,3 +29,8 @@ class TestStringCalculator:
 
         result = self.calculator.add("1,2,3,4,5")
         assert result == 15
+
+    def test_newlines_between_numbers(self):
+        """Test that new lines between numbers are handled."""
+        result = self.calculator.add("1\n2,3")
+        assert result == 6
