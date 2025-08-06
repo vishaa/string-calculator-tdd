@@ -34,3 +34,8 @@ class TestStringCalculator:
         """Test that new lines between numbers are handled."""
         result = self.calculator.add("1\n2,3")
         assert result == 6
+
+    def test_custom_delimiter(self):
+        """Test support for different delimiters."""
+        result = self.calculator.add("//;\n3;4")
+        assert result == 7
