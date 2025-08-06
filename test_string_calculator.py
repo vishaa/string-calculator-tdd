@@ -16,3 +16,8 @@ class TestStringCalculator:
         """Test that single number returns the number itself."""
         result = self.calculator.add("7")
         assert result == 7
+
+    def test_two_numbers_returns_sum(self):
+        """Test that two comma-separated numbers return their sum."""
+        result = self.calculator.add("4,5")
+        assert result == 9
