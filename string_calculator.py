@@ -5,7 +5,11 @@ class StringCalculator:
             return 0
         
         if ',' in numbers:
-            number_list = numbers.split(',')
-            return sum(int(num) for num in number_list)
+            number_list = self._parse_numbers(numbers)
+            return sum(number_list)
 
         return int(numbers)
+
+    def _parse_numbers(self, numbers: str):
+        """Parse comma-separated numbers into a list of integers."""
+        return [int(num) for num in numbers.split(',')]
